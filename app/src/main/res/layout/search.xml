@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        card_view:cardCornerRadius="10dp"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <SearchView
+                android:id="@+id/search"
+                android:layout_marginLeft="10dp"
+                android:layout_width="240dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:elevation="2dp"
+                android:background="#fff"
+                android:layout_height="wrap_content">
+
+        </SearchView>
+        <ImageButton
+                android:id="@+id/btnlist"
+                android:background="@drawable/viewlist"
+                android:layout_marginLeft="5dp"
+                android:layout_width="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_height="match_parent"/>
+        <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/btngrid"
+                android:background="@drawable/gridview"
+                android:layout_marginLeft="5dp"
+                android:layout_width="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
